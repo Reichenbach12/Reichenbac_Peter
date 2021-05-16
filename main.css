@@ -1,0 +1,210 @@
+
+body{
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	
+ }
+
+ *, *::before, *::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+ }
+
+img{
+	max-width: 100%;
+}
+
+.portfolio{
+text-anchor: top;
+
+}
+
+/*--layout--*/
+ body{
+	background-color: grey;
+	display: grid;
+	grid-template-areas: 
+		"fejlec"
+		"navigacio"
+		"kontent"
+		"lablec"
+	;
+	grid-template-rows: max-content max-content 1fr max-content;
+	min-height: 100vh;
+
+	}
+ header{
+	background-color: grey;
+	grid-area: fejlec;
+ }
+ 
+ main{
+	background-color: grey;
+	grid-area: kontent;
+	font-size: 2.5rem;
+	color: white;
+	width: 100%;
+	text-align: center;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+ }
+
+  nav{
+	background-color: grey;
+	grid-area: navigacio;
+  }
+
+ footer{
+	background-color: grey;
+	grid-area: lablec;
+ }
+/*--layout_end--*/
+
+/*--azonos_header--*/
+ header {
+	font-size: 3rem;
+	width: 100%;
+	text-align: center;
+	background-color: rgba(210,125,15,0.6);
+	border: 6px solid orange;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+ }
+/*--azonos_header_end--*/
+
+/*--azonos_nav--*/
+ nav{
+	line-height: 2rem;
+	font-size: 1.3rem;
+ }
+ .gomb{
+	background-color: orange;
+	display: inline-block;
+	padding: .5rem 1rem;
+	transition: .3s;
+ }
+ .flex{
+	display: flex;
+	flex-wrap: wrap;
+ }
+ .flex1{
+	flex-grow: 1;
+	text-align: center;
+ }
+ .gomb:hover{
+	cursor: pointer;
+	background-color: rgb(230,140,30);
+ }
+ .navmenu{
+	color: black;
+	text-underline-position: 
+ }
+ a{
+	text-decoration: none;
+ }
+/*--azonos_nav_end--*/
+
+/*--azonos_footer--*/
+ footer{
+	font-size: .7rem;
+	background-color: rgba(210,125,15,0.6);
+ }
+/*--azonos_footer_end--*/
+
+/*--bemutatkozas--*/
+ .enkep {
+	height: 30rem;
+ }
+ .en_kep{
+	height: 28%;
+	width: 28%;
+	object-fit: contain;
+	float: left;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	margin-bottom: 1.5rem;
+	border: 3px solid orange;
+	border-radius: 2px;
+
+ }
+ .szoveg{
+	font-size: 1.3rem;
+	text-align: left;
+	margin: 2rem;
+ }
+ #udv{
+ 	font-size: 2.2rem;
+ 	color: orange;
+ 	font-style: bold;
+ 	font-style: italic;
+ }
+ p{
+ 	padding-bottom: 1rem;
+ }
+/*--bemutatkozas_end--*/
+
+/*--galeria--*/
+  .kep_kartya .kep{
+  	height: 33rem;
+  	background-color: darkgrey;
+  	text-align: center;
+  	margin: 1rem;
+  }
+  .kep_kartya .kep img{
+  	height: 100%;
+  	width: 100%;
+  	object-fit: contain;
+  	padding: .5rem;
+  }
+  .felirat{
+  	background-color: orange;
+  	color: black;
+  	font-size: 1.4rem;
+  	margin-left: 1rem;
+  	margin-right: 1rem;
+
+  }
+/*--galeria_end--*/
+
+/*--document--*/
+ .kep_1{
+	height: 46%;
+  	width: 46%;
+  	object-fit: contain;
+  	float: right;
+  	padding: 1rem;
+  	margin: 2rem;
+  	background-color: darkgrey;
+ }
+ .szoveg_1{
+	font-size: 1.3rem;
+	text-align: left;
+	padding: 1rem;
+ }
+ .vege{
+	font-size: 2.5rem;
+	color: orange;
+	padding: 2rem;
+ }
+ mark{
+	color-profile: black;
+	background-color: rgba(255,165,0,0.9);
+ }
+ .szoveg_2{
+ 	font-size: 1.3rem;
+ 	padding: 1rem;
+ 	text-align: right;
+ }
+/*--document_end--*/
+.kezdokep{
+  	text-align: center;	
+}
+.kezdokep img{
+	height: 85%;
+	width: 85%;
+	object-fit: contain;
+	padding: 1rem;
+}
